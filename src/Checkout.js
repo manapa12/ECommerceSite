@@ -2,6 +2,7 @@ import { useHistory } from "react-router-dom";
 import BillingInfo from "./BillingInfo";
 import ShippingInfo from "./ShippingInfo";
 import  PaymentInfo  from "./PaymentInfo";
+import InfoOfCheckout from "./InfoOfCheckout";
 
 const Checkout = ({ cart }) => {
   const history = useHistory()
@@ -26,7 +27,9 @@ const Checkout = ({ cart }) => {
               <PaymentInfo />
             </div>
           </div>
-          <div className="checkout-all-products"></div>
+          <div className="checkout-all-products-container">
+            <InfoOfCheckout itemsInCart={cart}/>
+          </div>
        </div>
     </main>
   )
