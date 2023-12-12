@@ -11,15 +11,15 @@ const PaymentInfo = () => {
                 <input type="radio" name="paymentType" id="card" />
             </div>
             <div className="second-label-pay">
-                <label className="label-for-payment" htmlFor="cash">Cash on Delivery</label>
+                <label className="label-for-payment" id="delivery-id" htmlFor="cash">Cash on Delivery</label>
                 <input type="radio" name="paymentType" id="cash" />
             </div>
             <div className="third-label-pay">
-                <label className="label-for-payment" htmlFor="CCNumber">Credit Card Number</label>
-                <input type="text" name="CreditNumber" id="CCNumber" />
+                <label className="label-for-payment" htmlFor="CCNumber">Credit Card Number:</label>
+                <input type="text" name="CreditNumber" id="CCNumber" placeholder="XXXX-XXXX-XXXX-XXXX"/>
             </div>
             <div className="four-label-pay">
-                <label className="label-for-payment" htmlFor="CCName">Name on Credit Card</label>
+                <label className="label-for-payment" htmlFor="CCName">Name on Credit Card:</label>
                 <input type="text" name="CreditName" id="CCName" />
             </div>
         </form>

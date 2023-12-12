@@ -673,18 +673,33 @@
 }
 
 .checkout-grid-container{
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   display: grid;
   grid-template-columns: 2fr 1fr; 
-  
+  gap: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
 }
+
+@media screen and (max-width:700px){
+  .checkout-grid-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+  
 
 .checkout-personal-info{
-  border: 1px solid black;
+  
+  padding: 1rem 1.5rem;
 }
 
+.checkout-personal-info > h2 {
+  margin-bottom: 1.8rem;
+}
 .checkout-all-products-container{
-  border: 1px solid black;
+  
 }
 
 .description-list-container{
@@ -715,9 +730,86 @@
   margin-right: 0.5rem;
 }
 
+
 .image-n-title-summary > img {
   max-width: 40px;
   max-height: auto;
   margin-left: 0.5rem;
+}
+
+.summary-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.total-bill-container{
+  text-align: right;
+  margin-top: auto;
+  margin: 1rem;
+  margin-top: auto;
+}
+
+.total-bill-container > p {
+  margin-bottom: 0.2rem;
+}
+
+.place-order-button{
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #f0761d;
+  border: none;
+}
+
+.go-back{
+  margin-bottom: 2rem;
+}
+
+.summary-list > h3 {
+  margin: 1rem 0;
+}
+
+.place-order-button:active{
+  background-color: #000;
+  color: #fff;
+}
+
+
+.title-for-checkout-grid{
+  color:#f0761d; 
+  margin:0.7rem 0
+}
+
+.form-for-billing{
+  display: flex;
+  flex-direction: column;
+}
+
+.first-label-bill, .second-label-bill, .third-label-bill{
+  margin: 0.3rem 0;
+}
+
+input[type=text] {
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.label-for-billing{
+  margin-right: 0.4rem;
+}
+
+.first-label-ship, .second-label-ship, .third-label-ship, .four-label-ship {
+  margin: 0.3rem 0;
+}
+
+.label-for-payment{
+  margin-right: 0.4rem;
+}
+
+.second-label-pay{
+  margin-bottom: 1rem;
 }
 /*Grid for Checkout-------*/
