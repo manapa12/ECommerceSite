@@ -541,15 +541,14 @@
 }
 
 .product-image{
-  max-width: 100px;
-  max-height: 100px;
+  width: 100px;
+  height: auto;
 }
 
 .image-for-product{
   max-width: 100%;
   height: auto;
 }
-
 
 /*Home product scroll-------*/
 
