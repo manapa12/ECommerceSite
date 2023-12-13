@@ -812,3 +812,20 @@ input[type=text] {
   margin-bottom: 1rem;
 }
 /*Grid for Checkout-------*/
+
+/*CONFIRM ORDER*/
+
+.confirm-order-container{
+  height: 200px;
+  background-color: #ececec;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border:1px solid #f0761d;
+  border-radius: 10px;
+  padding: 0rem 1rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+/*CONFIRM ORDER*/
